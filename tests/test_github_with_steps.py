@@ -5,7 +5,7 @@ from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 from allure_commons.types import Severity
 
-
+# Проверка с помощью 'with allure.step'
 @allure.tag("web")
 @allure.label("owner", "Shurukhina")
 @allure.severity(Severity.CRITICAL)
@@ -30,7 +30,7 @@ def test_dynamic_steps():
     with allure.step("Проверяем наличие Issue №76"):
         s(by.partial_text("#76")).should(be.visible)
 
-
+# Проверка с помощью декоратора '@allure.step'
 @allure.tag("web")
 @allure.label("owner", "Shurukhina")
 @allure.severity(Severity.BLOCKER)
