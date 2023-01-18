@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+#Allure
+tests/allure-results
+tests/.pytest_cache
+.idea
 
 # C extensions
 *.so
