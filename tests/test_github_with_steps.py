@@ -9,7 +9,7 @@ from allure_commons.types import Severity
 @allure.tag("web")
 @allure.label("owner", "Shurukhina")
 @allure.severity(Severity.CRITICAL)
-@allure.feature("Проверка наличия задачи №576 в репозитории")
+@allure.feature("Проверка наличия задачи №76 в репозитории")
 @allure.story("Лямбда шаги с помощью 'with allure.step'")
 @allure.link("https://github.com", name="Testing")
 def test_dynamic_steps():
@@ -27,8 +27,8 @@ def test_dynamic_steps():
     with allure.step("Открываем вкладку 'Issue'"):
         s("#issues-tab").click()
 
-    with allure.step("Проверяем наличие Issue №576"):
-        s(by.partial_text("#576")).should(be.visible)
+    with allure.step("Проверяем наличие Issue №76"):
+        s(by.partial_text("#76")).should(be.visible)
 
 
 @allure.tag("web")
