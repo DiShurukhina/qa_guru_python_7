@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 #Allure
 allure-results
+tests/allure-results
 tests/.pytest_cache
 .idea
 
